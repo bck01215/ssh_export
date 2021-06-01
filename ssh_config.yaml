@@ -5,4 +5,4 @@
   services:
     - service_name
     - service_name
-  check_disk_usage: true
+  check_disk_usage: true #bool on whether to or not to
