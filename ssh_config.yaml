@@ -1,0 +1,8 @@
+- host: hostname/IP
+  login:
+    user: username
+    password: password
+  services:
+    - service_name
+    - service_name
+  check_disk_usage: true

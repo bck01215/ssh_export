@@ -1,0 +1,13 @@
+[package]
+authors = ["Brandon Kauffman <bkauffman7@liberty.edu>"]
+edition = "2018"
+name = "remote_exporter"
+version = "0.1.0"
+
+[dependencies]
+tokio = { version = "0.2", features = ["macros", "time"] }
+warp = "0.2"
+prometheus = { version = "0.9", features = ["process"] }
+lazy_static = "1.4.0"
+ssh2 = "0.9.1"
+yaml-rust = "0.4"
