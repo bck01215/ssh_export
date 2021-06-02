@@ -87,8 +87,8 @@ async fn main() {
     let get_disks = data["check_disk_usage"].as_bool().unwrap();
     register_custom_metrics(services, get_disks);
     let metrics_route = warp::path!("metrics").and_then(metrics_handler);
-    println!("Started on port 8080");
-    warp::serve(metrics_route).run(([127, 0, 0, 1], 7222)).await;
+    println!("Started on port 7222");
+    warp::serve(metrics_route).run(([0, 0, 0, 0], 7222)).await;
 }
 
 async fn metrics_handler() -> Result<impl Reply, Rejection> {
