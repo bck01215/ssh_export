@@ -1,8 +1,15 @@
-- host: hostname/IP
+- host: host1
   login:
-    user: username
-    password: password
+    user: user1
+    password: pass1
   services:
-    - service_name
-    - service_name
-  check_disk_usage: true #bool on whether to or not to
+    - vmtoolsd
+  check_disk_usage: true
+
+- host: host2
+  login:
+    user: user2
+    password: pass2
+  services:
+    - ntpd
+  check_disk_usage: true
